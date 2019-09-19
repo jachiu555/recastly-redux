@@ -12,7 +12,7 @@ var handleVideoSearch = (q) => {
   // create options object with respective properties
   // call search youtube function passing in options object, and run dispatch callback on current video, current video list passing in data
 
-  return function (dispatch)  {
+  return function (dispatch) {
     let options = {key: YOUTUBE_API_KEY, query: q, max: 5};
 
     searchYouTube(options, (data) => {
